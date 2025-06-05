@@ -1,0 +1,6339 @@
+{
+  "ADC": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClusterId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SequenceNumber",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ADCNumber",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ADCTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "AICluster": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Cluster",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ImagePath",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Cluster": [],
+      "Remark": [],
+      "ImagePath": []
+    }
+  },
+  "AIRemark": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClusterId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(250) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Remark": []
+    }
+  },
+  "Alert": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AlertType",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AliasName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "AlertName": [],
+      "AlertType": [],
+      "AliasName": []
+    }
+  },
+  "AlertAudit": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PortfolioRemark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MaintainerRemark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsMaintainerAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "IsAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "IsOpenClose",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Remark": [],
+      "PortfolioRemark": [],
+      "MaintainerRemark": []
+    }
+  },
+  "AlertFrequency": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "PredictiveAlertDelay",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FailureAlertDelay",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "AlertInfo": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AlertType",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "AlertLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "IsHttpPost",
+        "type": "BIT"
+      },
+      {
+        "name": "IsHighEndAlert",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "AlertRemarkLine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SMSLogId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "Remark": []
+    }
+  },
+  "AlertValue": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "OperatorId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ValueB",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MaxValueA",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MaxValueB",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Value": [],
+      "ValueB": [],
+      "MaxValueA": [],
+      "MaxValueB": []
+    }
+  },
+  "AppAccess": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "StartTime",
+        "type": "DATETIME"
+      },
+      {
+        "name": "EndTime",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "AppKey": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AppKey",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AppValue",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "AppKey": [],
+      "AppValue": []
+    }
+  },
+  "Asset": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Longitude",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Latitude",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Longitude1",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Latitude1",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "UnderMaintence",
+        "type": "BIT"
+      },
+      {
+        "name": "HttpMisLink",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ReferenceValue",
+        "type": "DECIMAL(18, 0)"
+      },
+      {
+        "name": "Sequence",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsSeriesOpration",
+        "type": "BIT"
+      },
+      {
+        "name": "SeriesOprationTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsHalfPointMachine",
+        "type": "BIT"
+      },
+      {
+        "name": "AliasDirectionA",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AliasDirectionB",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsThickWave",
+        "type": "BIT"
+      },
+      {
+        "name": "ThickWaveTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ISDisplacement",
+        "type": "BIT"
+      },
+      {
+        "name": "MachineA",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MachineB",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MachineAScale",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MachineBScale",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsSingleModamPartial",
+        "type": "BIT"
+      },
+      {
+        "name": "BHMSTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsTemperature",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Longitude": [],
+      "Latitude": [],
+      "Longitude1": [],
+      "Latitude1": [],
+      "HttpMisLink": [],
+      "AliasDirectionA": [],
+      "AliasDirectionB": []
+    }
+  },
+  "AssetAttribute": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Title",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "MinValue",
+        "type": "DECIMAL(18, 0)"
+      },
+      {
+        "name": "MaxValue",
+        "type": "DECIMAL(18, 0)"
+      },
+      {
+        "name": "MinThreshold",
+        "type": "DECIMAL(18, 0)"
+      },
+      {
+        "name": "MaxThreshold",
+        "type": "DECIMAL(18, 0)"
+      },
+      {
+        "name": "ZeroOffset",
+        "type": "DECIMAL(18, 0)"
+      },
+      {
+        "name": "IsDigital",
+        "type": "BIT"
+      },
+      {
+        "name": "Sequence",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DefaultMultiplication",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "PannelTestValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "AliasName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsDerived",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Title": [],
+      "AliasName": []
+    }
+  },
+  "AssetInfo": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Channels",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Value",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ADC_RTime_Value",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Multiplication",
+        "type": "DECIMAL(18, 3)"
+      },
+      {
+        "name": "ThresHold",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "HttpPostName",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "GateContectTypeId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "Channels": [],
+      "Value": [],
+      "ADC_RTime_Value": [],
+      "HttpPostName": []
+    }
+  },
+  "AssetInfoDatalogger": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ContactType",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Value": [],
+      "ContactType": []
+    }
+  },
+  "AssetMapping": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MapAssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsChecked",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "AssetTemperature": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetInfoId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ActualValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "Temperature",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "AssetType": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsListView",
+        "type": "BIT"
+      },
+      {
+        "name": "IsBasicAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "X",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "Y",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "Z",
+        "type": "DECIMAL(18, 2)"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "AssetTypeCircuitDiagram": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CircuitDiagram",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "CircuitDiagram": []
+    }
+  },
+  "BasicAlertLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "IsHttpPost",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "BenchMarking": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsPrimary",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "BenchMarkingPointMachine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Direction",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ArrayData",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TsTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsAutomatic",
+        "type": "BIT"
+      },
+      {
+        "name": "IsPrimary",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Direction": [],
+      "ArrayData": [],
+      "TsTime": []
+    }
+  },
+  "BlockIPAddress": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IpAddress",
+        "type": "NVARCHAR(250) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "IpAddress": []
+    }
+  },
+  "BlockMacAddress": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MacAddress",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "MacAddress": []
+    }
+  },
+  "Blog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Title",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsMyDaily",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Title": [],
+      "Description": []
+    }
+  },
+  "BlogCommentLine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "BlogId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Comment",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Comment": []
+    }
+  },
+  "BlogImage": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "BlogId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ImagePath",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "ImagePath": []
+    }
+  },
+  "BlogLikeLine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "BlogId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LikeCounter",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "CalibrationDetails": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetInfoId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Multiplication",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "RailwayMultiplication",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "RDPMSMultiplication",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "RealTimeValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "Card": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClusterId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CardName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "CardName": []
+    }
+  },
+  "CardLine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ADCId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Pin",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClusterValidation",
+        "type": "BIT"
+      },
+      {
+        "name": "JointCalibration",
+        "type": "BIT"
+      },
+      {
+        "name": "LocationName",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RowNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TerminalNumberPositive",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TerminalNumberNegative",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CurrentSequenceNumber",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "LocationName": [],
+      "RowNumber": []
+    }
+  },
+  "ChannelConfig": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Channel",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MacId",
+        "type": "NVARCHAR(150) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "HttpPostUpdateDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Channel": [],
+      "MacId": []
+    }
+  },
+  "ChatBotFalseAnswer": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Question",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Answer",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Question": [],
+      "Answer": []
+    }
+  },
+  "ChatBotFile": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SearchId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ZoneId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FileName",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "FileName": []
+    }
+  },
+  "ChatBotRemark": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Question",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Answer",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Question": [],
+      "Answer": [],
+      "Remark": []
+    }
+  },
+  "ChatBotUrl": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SearchId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ZoneId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Url",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsApprove",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Url": []
+    }
+  },
+  "Cluster": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CurrentCard",
+        "type": "INTEGER"
+      },
+      {
+        "name": "V5",
+        "type": "INTEGER"
+      },
+      {
+        "name": "V82",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DI",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MintCard",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "ClusterCategory": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClasificationTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "StatusId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Percentage",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "SignatureImage",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsDivisionPDF",
+        "type": "BIT"
+      },
+      {
+        "name": "IsUnderObservation",
+        "type": "BIT"
+      },
+      {
+        "name": "PointMachineTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Remark": [],
+      "SignatureImage": []
+    }
+  },
+  "ClusterConfig": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClusterName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Param",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MqttPath",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "ClusterName": [],
+      "Param": [],
+      "MqttPath": []
+    }
+  },
+  "CommissioningDocument": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FileName",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "FileName": []
+    }
+  },
+  "CoordinatorDetails": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ZoneId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "PhoneNumber": []
+    }
+  },
+  "COSConfig": {
+    "columns": [
+      {
+        "name": "COSConfigId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Id_MNE",
+        "type": "NVARCHAR(250) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TYPE",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "VALUE",
+        "type": "BIT"
+      },
+      {
+        "name": "STRING",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "WT_DATE",
+        "type": "DATETIME"
+      },
+      {
+        "name": "MNEMONIC",
+        "type": "NVARCHAR(250) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Id_MNE": [],
+      "TYPE": [],
+      "STRING": [],
+      "MNEMONIC": []
+    }
+  },
+  "DataloggerAsset": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerAssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "DataloggerAssetMapping": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerAssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "DataloggerAssetType": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "DataloggerAttribute": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerAssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Title",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Title": []
+    }
+  },
+  "DataloggerEventData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerFileFormatId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Status",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Status": []
+    }
+  },
+  "DataloggerFileFormat": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SrNo",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "RelayName",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RelayType",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "SpareContact",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ContactType",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "RelayName": [],
+      "RelayType": [],
+      "SpareContact": [],
+      "ContactType": []
+    }
+  },
+  "DataloggerInfo": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerAssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataloggerAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SrNo",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ContactType",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "ContactType": []
+    }
+  },
+  "DefaultValue": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DataLoggerAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "DECIMAL(18, 2)"
+      }
+    ],
+    "sample_values": {}
+  },
+  "Division": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ZoneId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "PDFGenerationType",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ImagePath",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "StoreName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Description": [],
+      "ImagePath": [],
+      "StoreName": []
+    }
+  },
+  "DivisionImportantLink": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Link",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Link": []
+    }
+  },
+  "DivisionRemark": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "OperationTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "ImageName",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Remark": [],
+      "ImageName": []
+    }
+  },
+  "DivisionView": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionView",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "DivisionView": []
+    }
+  },
+  "ErrorCode": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ErrorCodeWord",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "ErrorCodeWord": []
+    }
+  },
+  "ErrorCodeIdentifier": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IdentifierName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "IdentifierName": []
+    }
+  },
+  "FamilyTrack": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TrackFamilyId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsAdjacent",
+        "type": "BIT"
+      },
+      {
+        "name": "AdjacentTypeId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "FRSAlert": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertInfoId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertCategoryId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SetAlertMessage",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "SetTimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ResetAlertMessage",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ResetTimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PossibleCause",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PossibleSolution",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CountOfPastTrend",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ThresholdBreach",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AcknowledgemenStatusId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AcknowledgemenTimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ResponsiblePersonId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MobileNumber",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "WatchListInstanceTimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastSetReminderTimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastResetReminderTimeStamp",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "SetAlertMessage": [],
+      "ResetAlertMessage": [],
+      "Description": [],
+      "PossibleCause": [],
+      "PossibleSolution": [],
+      "CountOfPastTrend": [],
+      "ThresholdBreach": [],
+      "Remark": [],
+      "MobileNumber": []
+    }
+  },
+  "FRSAlertAudit": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertInfoId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PortfolioRemark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MaintainerRemark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsMaintainerAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "IsAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "IsOpenClose",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Remark": [],
+      "PortfolioRemark": [],
+      "MaintainerRemark": []
+    }
+  },
+  "FRSAlertInstance": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FRSAlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Message",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsWatchList",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Message": [],
+      "Description": []
+    }
+  },
+  "FRSAttributeRange": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MaxSafeValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "AverageValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "MinSafeValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "MinFailValue",
+        "type": "DECIMAL(18, 2)"
+      }
+    ],
+    "sample_values": {}
+  },
+  "FRSWatchList": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertInfoId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsSet",
+        "type": "BIT"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Description": [],
+      "Remark": []
+    }
+  },
+  "GlobalConfig": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "DECIMAL(18, 2)"
+      }
+    ],
+    "sample_values": {}
+  },
+  "HeartBeatDefaultSetting": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsChecked",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "JobCard": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsLock",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "JobCardDescription": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DailyWork",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "DailyWork": [],
+      "Remark": []
+    }
+  },
+  "JobCardMaintainerUser": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MaintainerUserId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "JobCardMaterial": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Quantity",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsArrived",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "JobCardOverallTarget": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsResolved",
+        "type": "BIT"
+      },
+      {
+        "name": "IsAdminResolved",
+        "type": "BIT"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SMSLogId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "WatchListId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IssueType",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ResolvedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "IssueType": []
+    }
+  },
+  "JobCardOverallTargetRemark": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardOverallTargetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Remark": []
+    }
+  },
+  "JobCardStatus": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Description": []
+    }
+  },
+  "JobCardUser": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JobCardId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "JsonData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JsonValue",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreateDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "JsonValue": []
+    }
+  },
+  "JsonData_Remote": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JsonValue",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreateDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "JsonValue": []
+    }
+  },
+  "JsonData1": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "JsonValue",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreateDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "JsonValue": []
+    }
+  },
+  "Learning": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Subject",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR(4000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "VideoURL",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Subject": [],
+      "Description": [],
+      "VideoURL": []
+    }
+  },
+  "LoginHistory": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IpAddress",
+        "type": "NVARCHAR(250) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "City",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "LogInTime",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LogOutTime",
+        "type": "DATETIME"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "IpAddress": [],
+      "City": []
+    }
+  },
+  "LoginMacAddress": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MacAddress",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsApproved",
+        "type": "BIT"
+      },
+      {
+        "name": "IpAddress",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "City",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Timestamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "Source",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "MacAddress": [],
+      "IpAddress": [],
+      "City": [],
+      "Source": []
+    }
+  },
+  "LuxConfig": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Address",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Param",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsRed",
+        "type": "BIT"
+      },
+      {
+        "name": "IsGreen",
+        "type": "BIT"
+      },
+      {
+        "name": "IsYellow",
+        "type": "BIT"
+      },
+      {
+        "name": "IsDoubleYellow",
+        "type": "BIT"
+      },
+      {
+        "name": "FromDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ToDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Address": [],
+      "Param": []
+    }
+  },
+  "MaintainerUser": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FirstName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "LastName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "FirstName": [],
+      "LastName": [],
+      "PhoneNumber": []
+    }
+  },
+  "MaintenanceInput": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IndexScore",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MaintenenceInput",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "MaintenenceInput": []
+    }
+  },
+  "MQTTDetail": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MQTTUri",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTUsername",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTPassword",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTPort",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "MQTTUri": [],
+      "MQTTUsername": [],
+      "MQTTPassword": []
+    }
+  },
+  "MQTTDetailUtility": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MQTTUri",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTUsername",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTPassword",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTPort",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "MQTTUri": [],
+      "MQTTUsername": [],
+      "MQTTPassword": []
+    }
+  },
+  "MQTTLiveData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "NetworkConfig": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClusterId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "HopName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "EntityName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "EntityNumber",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ImagePath",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "HopName": [],
+      "EntityName": [],
+      "EntityNumber": [],
+      "Remark": [],
+      "ImagePath": []
+    }
+  },
+  "NotificationToken": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AndroidFCMToken",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IOSFCMToken",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastLoginDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastActivePlatform",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "AndroidFCMToken": [],
+      "IOSFCMToken": []
+    }
+  },
+  "OperationsCount": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "PrevValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "Count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Timestamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsActive",
+        "type": "NCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "IsActive": []
+    }
+  },
+  "OperationsCountSignal": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "PrevValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "Count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Timestamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsActive",
+        "type": "NCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "IsActive": []
+    }
+  },
+  "OperationsCountSignal_Remote": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "PrevValue",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "Count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Timestamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsActive",
+        "type": "NCHAR(10) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreateDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "IsActive": []
+    }
+  },
+  "Operator": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Value",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Value": []
+    }
+  },
+  "PannelTest": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FileName",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "FileName": []
+    }
+  },
+  "PLCFileConverter": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "StartTime",
+        "type": "DATETIME"
+      },
+      {
+        "name": "EndTime",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "PointAsset": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "PointMachineAlerts": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertMessage",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "AlertMessage": []
+    }
+  },
+  "PointMachineAverage": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Avg_Type",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Average",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Avg_Type": []
+    }
+  },
+  "PointMachineAverage_Remote": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Avg_Type",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Average",
+        "type": "DECIMAL(18, 2)"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Avg_Type": []
+    }
+  },
+  "PointMachineData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Direction",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ArrayData",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TsTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Date",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsUsed",
+        "type": "BIT"
+      },
+      {
+        "name": "IsUsedFRSAlert",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Direction": [],
+      "ArrayData": [],
+      "TsTime": [],
+      "Date": []
+    }
+  },
+  "PointMachineData_Remote": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Direction",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ArrayData",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TsTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Date",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsUsed",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Direction": [],
+      "ArrayData": [],
+      "TsTime": [],
+      "Date": []
+    }
+  },
+  "PointMachineEvent": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Type",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Direction",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "VoltageCount",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CurrentCount",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeOfOpration",
+        "type": "INTEGER"
+      },
+      {
+        "name": "OperationTime",
+        "type": "DATETIME"
+      },
+      {
+        "name": "CaptureTime",
+        "type": "DATETIME"
+      },
+      {
+        "name": "UpdateTime",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Type": [],
+      "Direction": []
+    }
+  },
+  "PointMachineException": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Type",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Direction",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ArrayData",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TsTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "Cluster",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsDivisionPDF",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Type": [],
+      "Direction": [],
+      "ArrayData": [],
+      "TsTime": [],
+      "Remark": []
+    }
+  },
+  "Project": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ContractNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "ContractNumber": []
+    }
+  },
+  "ProjectAttribute": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ProjectId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "ProjectDivision": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ProjectId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "ProjectSite": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ProjectId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "Role": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Title",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Description": [],
+      "Title": []
+    }
+  },
+  "Roster": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "RosterHistory": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Status",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AssignDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "MaintenanceInput",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RosterId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "Status": [],
+      "Remark": [],
+      "MaintenanceInput": []
+    }
+  },
+  "RouteSite": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "RouteName",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "RouteName": []
+    }
+  },
+  "RouteTrack": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "RouteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SequenceNumber",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "Section": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Description": []
+    }
+  },
+  "SI24": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SrNo",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DatetimeOfFailure",
+        "type": "DATETIME"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CauseOfFailure",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "NatureOfFailure",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ImageScan",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "SrNo": [],
+      "CauseOfFailure": [],
+      "NatureOfFailure": [],
+      "Remark": [],
+      "ImageScan": []
+    }
+  },
+  "SignalAlertLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "IsHttpPost",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "SignalNumber": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MobileNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "MobileNumber": []
+    }
+  },
+  "SIPView": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SipView",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "SipView": []
+    }
+  },
+  "Site": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ZoneId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTBasePath",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MQTTNoOfChannels",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MQTTActiveChannel",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MACId",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "SmsFrequency",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SmsLimit",
+        "type": "INTEGER"
+      },
+      {
+        "name": "StationCode",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsHttpPost",
+        "type": "BIT"
+      },
+      {
+        "name": "IsSetupLocalSite",
+        "type": "BIT"
+      },
+      {
+        "name": "IsEIEnable",
+        "type": "BIT"
+      },
+      {
+        "name": "PLCLogId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsTest",
+        "type": "BIT"
+      },
+      {
+        "name": "IsNoneRE",
+        "type": "BIT"
+      },
+      {
+        "name": "IsUnderDevlopment",
+        "type": "BIT"
+      },
+      {
+        "name": "IsAnalytics",
+        "type": "BIT"
+      },
+      {
+        "name": "IsEarthFaultPushNotification",
+        "type": "BIT"
+      },
+      {
+        "name": "ChargerDelay",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsTestUser",
+        "type": "BIT"
+      },
+      {
+        "name": "RebootTotal",
+        "type": "INTEGER"
+      },
+      {
+        "name": "RebootDay",
+        "type": "INTEGER"
+      },
+      {
+        "name": "RebootDaynum",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsCuttingRelayVoltage",
+        "type": "BIT"
+      },
+      {
+        "name": "IsSummary",
+        "type": "BIT"
+      },
+      {
+        "name": "IsSeriesOpration",
+        "type": "BIT"
+      },
+      {
+        "name": "IsPointDetection50v",
+        "type": "BIT"
+      },
+      {
+        "name": "CalibrationStartDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "CalibrationEndDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ClusterValidationDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "RouterId",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "MobileNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsWatchlistRegenerate",
+        "type": "BIT"
+      },
+      {
+        "name": "IsDataLogger",
+        "type": "BIT"
+      },
+      {
+        "name": "DataLoggerVersion",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsDataLoggerJsonReverse",
+        "type": "BIT"
+      },
+      {
+        "name": "SectionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ModemType",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SingleModamType",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsCombinePointMachine",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Description": [],
+      "MQTTBasePath": [],
+      "MACId": [],
+      "StationCode": [],
+      "RouterId": [],
+      "MobileNumber": []
+    }
+  },
+  "SiteAttributeData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeData",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "AttributeData": []
+    }
+  },
+  "SiteMaintenaceOperation": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsIncludeExclude",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "SiteNumber": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MobileNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "MobileNumber": []
+    }
+  },
+  "SitePointMachine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "APIPath",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "UserId",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DashboardId",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DeviceId",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "APIPath": [],
+      "UserId": [],
+      "DashboardId": [],
+      "DeviceId": []
+    }
+  },
+  "SiteSurvey": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LocationBoxNo",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "LocationSide",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DistanceFromRR",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Cluster",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TR",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TF",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PointMachine",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Signal",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AxleCounter",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "BusBar",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "UFSBI",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "BHMS",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "LocationBoxNo": [],
+      "LocationSide": [],
+      "DistanceFromRR": [],
+      "TR": [],
+      "TF": [],
+      "PointMachine": [],
+      "Signal": [],
+      "AxleCounter": [],
+      "BusBar": [],
+      "UFSBI": [],
+      "BHMS": []
+    }
+  },
+  "SiteSurveyClusterStatus": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Cluster",
+        "type": "INTEGER"
+      },
+      {
+        "name": "StatusTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsChecked",
+        "type": "BIT"
+      },
+      {
+        "name": "TerminationTrackCount",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TerminationPointCount",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TerminationSignalCount",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "SiteTemperature": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Latitude",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Longitude",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PickTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "StartTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "EndTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "FetchTemperature",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Latitude": [],
+      "Longitude": [],
+      "PickTime": [],
+      "StartTime": [],
+      "EndTime": []
+    }
+  },
+  "SMSLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MobileNumber",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Message",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsSmsLogActive",
+        "type": "BIT"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Validity",
+        "type": "BIT"
+      },
+      {
+        "name": "IsExclude",
+        "type": "BIT"
+      },
+      {
+        "name": "IsMainAlert",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "MobileNumber": [],
+      "Message": [],
+      "Remark": []
+    }
+  },
+  "SMSLog_I": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MobileNumber",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Message",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsSmsLogActive",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "MobileNumber": [],
+      "Message": []
+    }
+  },
+  "SmsTriggerSetting": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SmsFrequency",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SmsLimit",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "SupportTicket": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Title",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RequestDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "StatusId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Title": [],
+      "Description": [],
+      "Remark": []
+    }
+  },
+  "SupportTicketImage": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SupportTicketId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ImagePath",
+        "type": "NVARCHAR(2000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "ImagePath": []
+    }
+  },
+  "SurveyAttribute": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Title",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CurrentCount",
+        "type": "INTEGER"
+      },
+      {
+        "name": "VoltageCount",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CurrentSensor",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "VoltageSensor",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DefaultCheck",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Title": [],
+      "CurrentSensor": [],
+      "VoltageSensor": []
+    }
+  },
+  "SurveyInfo": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SurveyAttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "SurveyPointMachine": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsHalfPointMachine",
+        "type": "BIT"
+      },
+      {
+        "name": "IsThickWave",
+        "type": "BIT"
+      },
+      {
+        "name": "ThickWaveTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsSeriesOpration",
+        "type": "BIT"
+      },
+      {
+        "name": "SeriesOprationTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MachineA",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MachineB",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "sysdiagrams": {
+    "columns": [
+      {
+        "name": "name",
+        "type": "NVARCHAR(128) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "principal_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "diagram_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "version",
+        "type": "INTEGER"
+      },
+      {
+        "name": "definition",
+        "type": "VARBINARY"
+      }
+    ],
+    "sample_values": {
+      "name": []
+    }
+  },
+  "TableChangeLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "TableLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TableName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "TableName": []
+    }
+  },
+  "TCPClientData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClientName",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ServerId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClientValue",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Status",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "ClientName": [],
+      "ClientValue": [],
+      "Status": []
+    }
+  },
+  "TCPServerData": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Port",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "ServerType",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IpAddress",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsRegister",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Port": [],
+      "IpAddress": []
+    }
+  },
+  "Testimonial": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RailwayRemark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Remark": [],
+      "RailwayRemark": []
+    }
+  },
+  "TestimonialImage": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TestimonialId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ImageName",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsRailway",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "ImageName": []
+    }
+  },
+  "Token": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CustomerId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Token",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastAccessDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsExpired",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "Token": []
+    }
+  },
+  "TrainMoment": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TrainNumber",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LineTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "EntryTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "ExitTime",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsVerify",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsVerifyNextStation",
+        "type": "BIT"
+      },
+      {
+        "name": "UniqueId",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "TrainNumber": [],
+      "EntryTime": [],
+      "ExitTime": [],
+      "UniqueId": []
+    }
+  },
+  "User": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserLevelId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "FirstName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "LastName",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "EmailAddress",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Password",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RoleId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "IsYardConfig",
+        "type": "BIT"
+      },
+      {
+        "name": "IsCalibration",
+        "type": "BIT"
+      },
+      {
+        "name": "IsMyDaily",
+        "type": "BIT"
+      },
+      {
+        "name": "IsSiteKeeping",
+        "type": "BIT"
+      },
+      {
+        "name": "ImageScan",
+        "type": "VARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Designation",
+        "type": "VARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsTestUser",
+        "type": "BIT"
+      },
+      {
+        "name": "IsChatBotUpload",
+        "type": "BIT"
+      },
+      {
+        "name": "IsAssignAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "IsHighEndAlert",
+        "type": "BIT"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "VersionNumber",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsOTPSent",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "FirstName": [],
+      "LastName": [],
+      "EmailAddress": [],
+      "PhoneNumber": [],
+      "Password": [],
+      "ImageScan": [],
+      "Designation": [],
+      "VersionNumber": []
+    }
+  },
+  "UserClass": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ClassName",
+        "type": "NVARCHAR(100) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "DelayInMinutes",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {
+      "ClassName": [],
+      "Description": []
+    }
+  },
+  "UserClassSmsLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AlertId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "UserClassId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "UserDivision": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      }
+    ],
+    "sample_values": {}
+  },
+  "UserLevel": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Level",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "RemiderDays",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      }
+    ],
+    "sample_values": {
+      "Level": [],
+      "RemiderDays": []
+    }
+  },
+  "UserOTP": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "OTPCode",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Expired",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {}
+  },
+  "UserSite": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsShowDeviceLastAccessTime",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "UserSiteTest": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UserId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsTest",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "UtilityLog": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UtilityType",
+        "type": "NVARCHAR(150) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "UtilityName",
+        "type": "NVARCHAR(150) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TimeStamp",
+        "type": "DATETIME"
+      },
+      {
+        "name": "IsLocalSite",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {
+      "UtilityType": [],
+      "UtilityName": []
+    }
+  },
+  "UtilityLogTest": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "UtilityId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsChecked",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "VibrationConfig": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "VibrationTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Address",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Param",
+        "type": "NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "FromDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "ToDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Address": [],
+      "Param": []
+    }
+  },
+  "WatchList": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "SiteId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetTypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AssetId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "AttributeValue",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "PointMachineInstance",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Cause",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Status",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Issue",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Remark",
+        "type": "NVARCHAR(1000) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "AlertInfoId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreationType",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "AttributeValue": [],
+      "PointMachineInstance": [],
+      "Cause": [],
+      "Status": [],
+      "Issue": [],
+      "Remark": []
+    }
+  },
+  "WorksheetMaterial": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(500) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "TypeId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": []
+    }
+  },
+  "WorksheetStoreMaterial": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "MaterialId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DivisionId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      }
+    ],
+    "sample_values": {}
+  },
+  "Zone": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "Name",
+        "type": "NVARCHAR(200) COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "Description",
+        "type": "NVARCHAR COLLATE \"SQL_Latin1_General_CP1_CI_AS\""
+      },
+      {
+        "name": "IsActive",
+        "type": "BIT"
+      },
+      {
+        "name": "CreatedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "CreatedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "LastModifiedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "DATETIME"
+      },
+      {
+        "name": "DeletedBy",
+        "type": "INTEGER"
+      },
+      {
+        "name": "DeletedDate",
+        "type": "DATETIME"
+      }
+    ],
+    "sample_values": {
+      "Name": [],
+      "Description": []
+    }
+  }
+}
