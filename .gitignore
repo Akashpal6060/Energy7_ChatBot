@@ -1,0 +1,10 @@
+# Ignore local environment file(s)
+.env
+
+# Ignore data or large folders that shouldn’t go to GitHub
+extra/
+FEB2025_data/
+
+# (You can add other patterns below, e.g. *.pyc, __pycache__/, etc.)
+*.pyc
+__pycache__/

@@ -1,0 +1,112 @@
+2025-06-05 21:09:00,802 INFO Relevant tables for question 'give all the site names': ['Site']
+2025-06-05 21:09:00,820 ERROR Error in chatbot_answer: text_generation() got an unexpected keyword argument 'inputs'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/chatbot_core.py", line 41, in chatbot_answer
+    sql = generate_sql_for_point_machines(question)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/sql_generation.py", line 49, in generate_sql_for_point_machines
+    response = client.text_generation(
+TypeError: text_generation() got an unexpected keyword argument 'inputs'
+
+2025-06-05 21:13:35,305 INFO Relevant tables for question 'give maximum current at surat': ['Asset', 'PointMachineData', 'SiteAttributeData']
+2025-06-05 21:13:35,309 ERROR Error in chatbot_answer: text_generation() got an unexpected keyword argument 'inputs'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/chatbot_core.py", line 41, in chatbot_answer
+    sql = generate_sql_for_point_machines(question)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/sql_generation.py", line 49, in generate_sql_for_point_machines
+    response = client.text_generation(
+TypeError: text_generation() got an unexpected keyword argument 'inputs'
+
+2025-06-05 21:25:31,098 INFO Relevant tables for question 'give al site names': ['Site']
+2025-06-05 21:25:31,486 ERROR Error in chatbot_answer: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/chatbot_core.py", line 41, in chatbot_answer
+    sql = generate_sql_for_point_machines(question)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/sql_generation.py", line 49, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 21:25:56,259 INFO Relevant tables for question 'give all site names': ['Site']
+2025-06-05 21:25:56,261 ERROR Error in chatbot_answer: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/chatbot_core.py", line 41, in chatbot_answer
+    sql = generate_sql_for_point_machines(question)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/sql_generation.py", line 49, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 00:28:59,489  INFO  Chosen tables for 'give all site names': ['Site', 'SiteTemperature', 'SurveyPointMachine', 'Cluster']
+2025-06-06 00:28:59,492  ERROR  Unhandled error: 'function' object has no attribute 'describe_table'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 79, in chatbot_answer
+    _build_schema_snippet(tables),
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 55, in _build_schema_snippet
+    cols = find_relevant_tables.describe_table(tbl)  # your own util
+AttributeError: 'function' object has no attribute 'describe_table'
+
+2025-06-06 00:31:06,112  INFO  Tables for 'give all site name': ['Site', 'SurveyPointMachine', 'Cluster', 'SiteTemperature']
+2025-06-06 00:31:06,115  ERROR  Unhandled error: module 'semantic_schema.schema_retrieval' has no attribute 'SCHEMA_INDEX'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 96, in chatbot_answer
+    _build_schema_snippet(tables),
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 68, in _build_schema_snippet
+    cols = [c["name"] for c in schema.SCHEMA_INDEX[tbl]["columns"]]
+AttributeError: module 'semantic_schema.schema_retrieval' has no attribute 'SCHEMA_INDEX'
+
+2025-06-06 00:33:17,483  INFO  Selected tables for give all site name → ['Site', 'SurveyPointMachine', 'Cluster', 'SiteTemperature']
+2025-06-06 00:33:17,483  WARNING  Could not fetch cols for Site: module 'semantic_schema.schema_retrieval' has no attribute 'describe_table'
+2025-06-06 00:33:17,483  WARNING  Could not fetch cols for SurveyPointMachine: module 'semantic_schema.schema_retrieval' has no attribute 'describe_table'
+2025-06-06 00:33:17,483  WARNING  Could not fetch cols for Cluster: module 'semantic_schema.schema_retrieval' has no attribute 'describe_table'
+2025-06-06 00:33:17,483  WARNING  Could not fetch cols for SiteTemperature: module 'semantic_schema.schema_retrieval' has no attribute 'describe_table'
+2025-06-06 01:08:21,718  INFO  Selected tables for give all sites name → ['AlertInfo', 'Asset', 'AssetType', 'Cluster']
+2025-06-06 01:10:55,688  INFO  Selected tables for give all zone names → ['Zone']
+2025-06-06 01:16:37,816  INFO  Selected tables for give all site names → ['Site', 'Asset', 'Cluster', 'DataloggerAsset']
+2025-06-06 01:16:38,205  ERROR  Unhandled error: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 111, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 59, in generate_sql_for_point_machines
+    resp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 01:16:50,425  INFO  Selected tables for give the max current at point machine pt101 → ['Asset', 'SurveyPointMachine']
+2025-06-06 01:16:50,427  ERROR  Unhandled error: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 111, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 59, in generate_sql_for_point_machines
+    resp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 01:17:04,287  INFO  Selected tables for give all point machine names → ['Asset', 'SurveyPointMachine', 'AlertInfo', 'AssetType']
+2025-06-06 01:17:04,289  ERROR  Unhandled error: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 111, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 59, in generate_sql_for_point_machines
+    resp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 02:40:41,412  INFO  Selected tables for give all site names → ['Site', 'Asset', 'Cluster', 'DataloggerAsset']
+2025-06-06 02:40:42,122  WARNING  SQL-generation error: Model did not return a SELECT …
+2025-06-06 02:41:33,654  INFO  Selected tables for give all point machine names → ['Asset', 'SurveyPointMachine', 'AlertInfo', 'AssetType']
+2025-06-06 02:41:33,988  WARNING  SQL-generation error: Model did not return a SELECT …

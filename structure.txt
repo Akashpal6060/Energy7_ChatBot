@@ -1,0 +1,11 @@
+/your_project
+├─ .env
+├─ schema_index.json
+├─ build_schema_index.py
+├─ schema_retrieval.py
+├─ prompt_utils.py
+├─ sql_generation.py
+├─ execute_query.py
+├─ chatbot_core.py
+├─ cli_chatbot.py
+└─ test_hf.py                # optional (formerly test_llama.py)

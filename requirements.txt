@@ -1,0 +1,18 @@
+# --- core libs ---
+python-dotenv>=1.0.1
+pandas>=2.2.2
+SQLAlchemy>=2.0.30
+
+# --- ML & vector search ---
+sentence-transformers>=0.6.2
+scikit-learn>=1.4.2
+huggingface_hub>=0.23.2
+tqdm>=4.66.4          # progress bars
+
+# --- PyTorch CPU wheel ---
+# For Intel/AMD Linux & Windows → use the CPU wheel from the extra index
+torch==2.3.0+cpu       ; (sys_platform != "darwin" and platform_machine != "arm64")
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# For macOS (both Intel & Apple-silicon) → use the default wheel on PyPI
+torch==2.3.0           ; sys_platform == "darwin"

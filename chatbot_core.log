@@ -1,0 +1,315 @@
+2025-06-05 22:33:36,095 INFO Use pytorch device_name: mps
+2025-06-05 22:33:36,095 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:35:02,051 INFO Use pytorch device_name: mps
+2025-06-05 22:35:02,051 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:36:36,214 INFO Use pytorch device_name: mps
+2025-06-05 22:36:36,214 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:36:45,379 INFO Question: hi  |  Tables: ['User']
+2025-06-05 22:36:45,659 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 22:36:46,003 ERROR Chat fallback also failed: Model mistralai/Mixtral-8x7B-Instruct-v0.1 is not supported for task text-generation and provider together. Supported task: conversational.
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 79, in chatbot_answer
+    return chat_completion(
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/plain_chat.py", line 11, in chat_completion
+    return client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2298, in text_generation
+    request_parameters = provider_helper.prepare_request(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/_common.py", line 68, in prepare_request
+    provider_mapping_info = self._prepare_mapping_info(model)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/_common.py", line 132, in _prepare_mapping_info
+    raise ValueError(
+ValueError: Model mistralai/Mixtral-8x7B-Instruct-v0.1 is not supported for task text-generation and provider together. Supported task: conversational.
+
+2025-06-05 22:37:24,273 INFO Question: what is todays date  |  Tables: ['Roster', 'JobCardDescription', 'DivisionView', 'FRSAlertInstance', 'SIPView', 'UserOTP']
+2025-06-05 22:37:24,274 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 22:37:24,274 ERROR Chat fallback also failed: Model mistralai/Mixtral-8x7B-Instruct-v0.1 is not supported for task text-generation and provider together. Supported task: conversational.
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 79, in chatbot_answer
+    return chat_completion(
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/plain_chat.py", line 11, in chat_completion
+    return client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2298, in text_generation
+    request_parameters = provider_helper.prepare_request(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/_common.py", line 68, in prepare_request
+    provider_mapping_info = self._prepare_mapping_info(model)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/_common.py", line 132, in _prepare_mapping_info
+    raise ValueError(
+ValueError: Model mistralai/Mixtral-8x7B-Instruct-v0.1 is not supported for task text-generation and provider together. Supported task: conversational.
+
+2025-06-05 22:41:12,703 INFO Use pytorch device_name: mps
+2025-06-05 22:41:12,703 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:41:22,838 INFO Question: hi  |  Tables: ['User']
+2025-06-05 22:41:23,176 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 22:41:33,414 ERROR Chat fallback also failed: 'str' object has no attribute 'generated_text'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 79, in chatbot_answer
+    return chat_completion(
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/plain_chat.py", line 11, in chat_completion
+    return client.text_generation(
+AttributeError: 'str' object has no attribute 'generated_text'
+
+2025-06-05 22:41:55,339 INFO Question: todays date  |  Tables: ['Roster', 'JobCardDescription', 'FRSAlertInstance', 'DivisionView', 'UserOTP', 'SIPView']
+2025-06-05 22:41:55,340 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 22:41:56,945 ERROR Chat fallback also failed: 'str' object has no attribute 'generated_text'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 79, in chatbot_answer
+    return chat_completion(
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/plain_chat.py", line 11, in chat_completion
+    return client.text_generation(
+AttributeError: 'str' object has no attribute 'generated_text'
+
+2025-06-05 22:42:48,063 INFO Use pytorch device_name: mps
+2025-06-05 22:42:48,064 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:42:55,110 INFO Question: hi  |  Tables: ['User']
+2025-06-05 22:42:55,442 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 22:43:49,628 ERROR Chat fallback also failed: 'str' object has no attribute 'generated_text'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 23, in generate_sql_for_point_machines
+    response = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 79, in chatbot_answer
+    return chat_completion(
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/plain_chat.py", line 11, in chat_completion
+    return client.text_generation(
+AttributeError: 'str' object has no attribute 'generated_text'
+
+2025-06-05 22:48:09,916 INFO Use pytorch device_name: mps
+2025-06-05 22:48:09,916 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:50:33,556 INFO Use pytorch device_name: mps
+2025-06-05 22:50:33,557 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:51:18,812 INFO Use pytorch device_name: mps
+2025-06-05 22:51:18,813 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:53:27,256 INFO Use pytorch device_name: mps
+2025-06-05 22:53:27,257 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:57:08,229 INFO Use pytorch device_name: mps
+2025-06-05 22:57:08,229 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-05 22:58:03,855 INFO Question: hi  |  Tables: ['User']
+2025-06-05 22:58:04,189 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 44, in generate_sql_for_point_machines
+    rsp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 22:59:30,950 INFO Question: give all the site names  |  Tables: ['Site', 'SurveyPointMachine', 'SiteTemperature', 'SiteSurveyClusterStatus', 'SiteNumber', 'Cluster']
+2025-06-05 22:59:30,951 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 44, in generate_sql_for_point_machines
+    rsp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-05 23:01:14,342 INFO Question: give all the point machine names  |  Tables: ['BenchMarkingPointMachine', 'PointMachineData', 'sysdiagrams', 'PointMachineEvent', 'PointMachineAverage', 'PointMachineAverage_Remote']
+2025-06-05 23:01:14,343 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 44, in generate_sql_for_point_machines
+    rsp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 00:11:26,272 INFO Question: Give todays current values at bestan  |  Tables: ['FRSAlertInstance', 'MQTTLiveData', 'PointMachineAlerts', 'BenchMarkingPointMachine', 'RosterHistory', 'BasicAlertLog']
+2025-06-06 00:11:26,273 ERROR SQL path failed: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 65, in chatbot_answer
+    sql = generate_sql_for_point_machines(prompt)       # generate_sql now expects *full* prompt
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 44, in generate_sql_for_point_machines
+    rsp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 00:18:03,310 INFO Use pytorch device_name: mps
+2025-06-06 00:18:03,310 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-06 00:18:40,070 ERROR Error in chatbot_answer: find_relevant_tables() got an unexpected keyword argument 'top_k'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 56, in chatbot_answer
+    tables_dict = find_relevant_tables(question, top_k=3)  # {tbl: [col, col, …]}
+TypeError: find_relevant_tables() got an unexpected keyword argument 'top_k'
+
+2025-06-06 00:19:03,778 ERROR Error in chatbot_answer: find_relevant_tables() got an unexpected keyword argument 'top_k'
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 56, in chatbot_answer
+    tables_dict = find_relevant_tables(question, top_k=3)  # {tbl: [col, col, …]}
+TypeError: find_relevant_tables() got an unexpected keyword argument 'top_k'
+
+2025-06-06 00:22:36,981 INFO Use pytorch device_name: mps
+2025-06-06 00:22:36,981 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-06 00:22:50,947 INFO Relevant tables for 'give all point machine names': ['BenchMarkingPointMachine', 'sysdiagrams', 'PointMachineData', 'PointMachineEvent', 'PointMachineAverage_Remote', 'PointAsset']
+2025-06-06 00:22:51,247 ERROR Error in chatbot_answer: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 115, in chatbot_answer
+    sql = generate_sql_for_point_machines(full_prompt)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 44, in generate_sql_for_point_machines
+    rsp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 00:23:02,046 INFO Relevant tables for 'give all site names': ['Site', 'SiteTemperature', 'SurveyPointMachine', 'Cluster', 'RouteSite', 'SiteNumber']
+2025-06-06 00:23:02,047 ERROR Error in chatbot_answer: 
+Traceback (most recent call last):
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/core/chatbot_core.py", line 115, in chatbot_answer
+    sql = generate_sql_for_point_machines(full_prompt)
+  File "/Users/akashpal/Energy7/Energy7_ChatBot/llm/sql_generation.py", line 44, in generate_sql_for_point_machines
+    rsp = client.text_generation(
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_client.py", line 2297, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "/Users/akashpal/Library/Python/3.9/lib/python/site-packages/huggingface_hub/inference/_providers/__init__.py", line 177, in get_provider_helper
+    provider = next(iter(provider_mapping))
+StopIteration
+
+2025-06-06 00:25:19,870 INFO Use pytorch device_name: mps
+2025-06-06 00:25:19,870 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-06 00:27:05,501 INFO Use pytorch device_name: mps
+2025-06-06 00:27:05,502 INFO Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-07 16:23:02,251 INFO Selected tables for give cluster name → ['Cluster', 'AICluster', 'AlertInfo', 'Asset']
+2025-06-07 16:23:08,235 INFO Generated SQL:
+SELECT c.Name FROM Cluster c WHERE c.Id = 1
+2025-06-07 16:23:28,672 INFO Selected tables for give all cluster name → ['Cluster', 'AICluster', 'AlertInfo', 'Asset']
+2025-06-07 16:23:31,883 INFO Generated SQL:
+SELECT c.Name FROM Cluster c ORDER BY c.Name NULLS LAST;assistant
+I'm happy to help you with your question. However, I need a bit more information. Could you please provide more context or clarify what you mean by "give all cluster name"? Are you referring to a specific type of cluster, such as a computer cluster or a social cluster? Or are you looking for a list of all possible cluster names? Additionally, what is the purpose of this list? Is it for a project, a presentation, or something else?
+2025-06-07 16:24:10,307 INFO Selected tables for give all site name → ['Site', 'Asset', 'Cluster', 'DataloggerAsset']
+2025-06-07 16:24:16,037 INFO Generated SQL:
+SELECT s.Name FROM Site s ORDER BY s.Name NULLS LAST;
+2025-06-07 16:25:59,806 INFO Selected tables for give me feeding current of 03t track in bhestan → ['CardLine']
+2025-06-07 16:26:02,908 INFO Generated SQL:
+SELECT cl.Number FROM CardLine cl WHERE cl.AssetTypeId = 3 AND cl.LocationName = 'Bhestan' AND cl.RowNumber = 1 AND cl.TerminalNumberPositive = '03T' ORDER BY cl.Number NULLS LAST;assistant
+
+I am a bot designed to assist with a variety of tasks, including answering questions, providing information, and generating text. I can also help with language-related tasks such as language translation, grammar correction, and text summarization.
